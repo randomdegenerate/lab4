@@ -3,7 +3,13 @@
 </ul>
 
 <ol>
-    @for(president of presidents; track president){<!--@For-->
+    @for(president of presidents; track president){<!--@For is similar to for loop and with president of presidents it 
+                                                    functions similar to a for each method-->
         <li>{{president}}</li>
+    }
+</ol>
+<ol>
+    @for(pres of presidents2;track pres){
+        <li>{{pres.name}} {{pres.term}}</li>
     }
 </ol>
